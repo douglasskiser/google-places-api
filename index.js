@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var googleMapsClient = require('@google/maps').createClient({
-  key: 'AIzaSyA6bunprK2PMIyxFExEaU9hBm7qUYJZo40'
+  key: GOOGLE_MAPS_API_KEY
 });
 
 app.set('port', (process.env.PORT || 5000));
