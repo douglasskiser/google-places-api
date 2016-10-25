@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var googleMapsClient = require('@google/maps').createClient({
-  key: GOOGLE_MAPS_API_KEY
+  key: 'AIzaSyA6bunprK2PMIyxFExEaU9hBm7qUYJZo40'
 });
 
 app.set('port', (process.env.PORT || 5000));
@@ -10,7 +10,7 @@ app.use(function(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Credentials', true);
   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,PATCH,OPTIONS');
-  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Authorizationtoken, Activityid, Context, Useruniqueid, Content-Length, X-Requested-With, X-HTTP-Method-Override');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Authorizationtoken, Activityid, Context, Useruniqueid, Content-Length, X-Requested-With, X-HTTP-Method-Override, OverrideUserUniqueId');
   next();
 });
 
